@@ -1037,7 +1037,7 @@ function serializeToString(node,buf,isHTML,nodeFilter,visibleNamespaces){
 			}
 			buf.push('</',nodeName,'>');
 		}else{
-			buf.push('/>');
+			buf.push('></',nodeName,'>');
 		}
 		// remove added visible namespaces
 		//visibleNamespaces.length = startVisibleNamespaces;
