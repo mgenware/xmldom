@@ -62,7 +62,7 @@ function parse(source,defaultNSMapCopy,entityMap,domBuilder,errorHandler){
 			var xt = source.substring(start,end).replace(/&#?\w+;/g,entityReplacer);
 			locator&&position(start);
 			domBuilder.characters(xt,0,end-start);
-			start = end
+		start = end;
 		}
 	}
 	function position(p,m){
